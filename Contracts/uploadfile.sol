@@ -13,7 +13,7 @@ contract fileStorage {
     mapping(uint256 => File) public files;
     uint256 public fileCount;
     event fileUploaded(address indexed owner, uint256 fileId, string fileHash);
-    function uploadFile(string calldata _fileHash) external {
+    function uploadFile(string memory _fileHash) external {
         require(bytes(_fileHash).length > 0, "Invalid file hash");
         fileCount++;
         files[fileCount] = File(msg.sender, _fileHash);
@@ -21,9 +21,9 @@ contract fileStorage {
     }
     function getFile(
         uint256 _fileId
-    ) external view returns (address, string calldata) {
+    ) external view returns (address, string memory) {
         require(_fileId > 0 && _fileId <= fileCount, "Invalid file ID");
-        File calldata file = files[_fileId];
+        File memory file = files[_fileId];
         return (file.owner, file.fileHash);
     }
     function getfileowner(uint256 _fileId) external view returns (address) {
@@ -36,7 +36,7 @@ contract fileStorage {
     }
     function getFileHash(
         uint256 _fileId
-    ) external view onlyOwner(_fileId) returns (string calldata) {
+    ) external view onlyOwner(_fileId) returns (string memory) {
         return files[_fileId].fileHash;
     }
 }
