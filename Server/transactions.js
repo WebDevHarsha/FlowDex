@@ -3,7 +3,7 @@ const provider = new ethers.providers.JsonRpcProvider("https://sepolia.infura.io
 const pvtKey = "a2918da365188fbb24f4acdc3fdaa548c422bc8f67d85dbfea48ba5bf2fdf2a1";
 const wallet = new ethers.Wallet(pvtKey, provider);
 const recadd = "0xF61048A80E72DD1Ac8Ef9af768be702605Dc506e";
-const amntsend = new ethers.utils.parseEther("0.001");
+const amntsend = new ethers.utils.parseEther("0.00");
 async function sendEth() {
     try {
         const txn = await wallet.sendTransaction({

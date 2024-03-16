@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
-
+/**
+ * @title ContractName
+ * @dev ContractDescription
+ * @custom:dev-run-script scripts/deploy_with_ethers.ts
+ */
 contract SimpleTransaction {
     address public partyA;
     address public partyB;
