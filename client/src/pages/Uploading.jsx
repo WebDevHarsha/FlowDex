@@ -5,10 +5,10 @@ function Uploading() {
   return (
     <div>
         <Navbar />
-    <div className='h-screen w-screen flex bg-gradient-to-r from-[#fd0338] to-[#fbd895] '>
+    <div className='h-screen w-screen flex bg-gradient-to-r from-purple-600 via-purple-400 to-purple-200 '>
       
       <div className='flex justify-center w-1/2 items-center p-8 rounded-md'>
-            <h1 className=' text-3xl text-white font-[Roboto] '>
+            <h1 className=' text-3xl font-bold text-black font-[Roboto] '>
             Transfer your files safely and get the review process done soon.
             </h1>
         </div>
