@@ -64,10 +64,12 @@ function Test() {
                     </label>
                   </div>
                   <div class="relative">
-                    <button onClick={toggleSignup} class=" bg-purple-600 hover:ring-2 hover:ring-offset-4 hover:ring-purple-600 text-white rounded-md px-2 py-1 transition-all duration-300">
+                    <button  class=" bg-purple-600 hover:ring-2 hover:ring-offset-4 hover:ring-purple-600 text-white rounded-md px-2 py-1 transition-all duration-300">
                       Sign Up
                     </button>
                   </div>
+                  <a  className="hover:cursor-pointer text-blue-700 text-sm" onClick={toggleSignup}>have an account already?</a>
+
                 </div>
               </div>
             </div>
@@ -122,10 +124,12 @@ function Test() {
                     </label>
                   </div>
                   <div class="relative">
-                    <button onClick={toggleSignup} class=" bg-purple-600 hover:ring-2 hover:ring-offset-4 hover:ring-purple-600 text-white rounded-md px-2 py-1 transition-all duration-300">
+                    <button class=" bg-purple-600 hover:ring-2 hover:ring-offset-4 hover:ring-purple-600 text-white rounded-md px-2 py-1 transition-all duration-300">
                       Login
                     </button>
                   </div>
+                  <a  className="hover:cursor-pointer text-blue-700 text-sm" onClick={toggleSignup}>dont have an account? register here</a>
+
                 </div>
               </div>
             </div>

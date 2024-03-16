@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 
 function Viewing() {
   return (
-    <div>
+    <div className=" h-screen w-screen bg-gradient-to-r from-purple-600 via-purple-400 to-purple-200">
       <Navbar></Navbar>
-      <div className="mt-20">
+      <div className="pt-20">
         <form class="max-w-md mx-auto">
           <label
             for="default-search"
