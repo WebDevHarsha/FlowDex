@@ -1,2 +1,2 @@
 # FlowDex
-A web3 journal
+A web3 journal for contracts 
