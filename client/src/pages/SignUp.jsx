@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Test() {
+function Signup() {
   const [signup, setSignup] = useState(true);
 
   const toggleSignup = () => {
@@ -124,9 +124,11 @@ function Test() {
                     </label>
                   </div>
                   <div class="relative">
+                    <a href="profile">
                     <button class=" bg-purple-600 hover:ring-2 hover:ring-offset-4 hover:ring-purple-600 text-white rounded-md px-2 py-1 transition-all duration-300">
                       Login
                     </button>
+                    </a>
                   </div>
                   <a  className="hover:cursor-pointer text-blue-700 text-sm" onClick={toggleSignup}>dont have an account? register here</a>
 
@@ -143,4 +145,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Signup;
