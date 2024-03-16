@@ -29,7 +29,7 @@ function Profile() {
       })
       .then((balance) => {
         setdata({
-          Balance: "0."+balance.slice(2,-7),
+          Balance: balance,
         });
         console.log(balance)
       });
